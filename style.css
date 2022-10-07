@@ -68,8 +68,60 @@ body {
     padding-top: 6%;
 }
 
+.header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.first-row {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    padding-left: 2%;
+}
+
+.first-row>form {
+    flex-basis: 75%;
+    display: flex;
+    gap: 1%;
+    align-items: center;
+}
+
 .main-content {
     background-color: #E2E8F0;
 }
 
+label>img,
+#notifications {
+    height: 20px;
+    width: 20px;
+}
+
+#account-icon {
+    height: 40px;
+    width: 40px;
+}
+
+#account-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+input {
+    width: 55%;
+    background-color: #E2E8F0;
+    border: 1px solid #E2E8F0;
+    height: 2rem;
+    border-radius: 12px;
+    padding-left: 1%;
+}
+
 /* TEST STYLES */
+
+/* .header>div {
+    border: 1px solid bisque;
+} */
+
+/* .first-row>* {
+    border: 1px solid rebeccapurple;
+} */
