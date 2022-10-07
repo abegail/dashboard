@@ -70,10 +70,11 @@ body {
 
 .header {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.8fr 1fr;
 }
 
-.first-row {
+.first-row,
+.second-row {
     display: flex;
     align-items: center;
     gap: 2%;
@@ -116,12 +117,57 @@ input {
     padding-left: 1%;
 }
 
+#hello-account-icon {
+    height: 60px;
+    width: 60px;
+    grid-row: span 2;
+}
+
+.second-row button {
+    background-color: #1992D3;
+    border: 1px solid #1992D3;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 2.5rem;
+    width: 75px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.hello {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    flex-basis: 70%;
+    column-gap: 2%;
+}
+
+.hello .account-name {
+    grid-column-start: 2;
+}
+
+.greeting {
+    font-size: 0.85rem;
+    font-weight: bold;
+    align-self: end;
+}
+
+.hello .account-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.second-row {
+    margin-top: -12px;
+}
+
 /* TEST STYLES */
 
 /* .header>div {
     border: 1px solid bisque;
 } */
 
-/* .first-row>* {
+/* .second-row>*,
+.hello>* {
     border: 1px solid rebeccapurple;
 } */
