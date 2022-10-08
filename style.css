@@ -89,10 +89,6 @@ body {
     align-items: center;
 }
 
-.main-content {
-    background-color: #E2E8F0;
-}
-
 label>img,
 #notifications {
     height: 20px;
@@ -164,11 +160,22 @@ input {
     padding-right: 1%;
 }
 
+.main-content {
+    background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 3fr 1.2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
 /* TEST STYLES */
 
-/* .header>div {
-    border: 1px solid bisque;
-} */
+.main-content>div {
+    border: 1px solid red;
+}
+
+.projects {
+    grid-row: span 2;
+}
 
 /* .second-row>*,
 .hello>* {
