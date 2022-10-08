@@ -167,15 +167,42 @@ input {
     grid-template-rows: 1fr 1fr;
 }
 
+.projects {
+    grid-row: span 2;
+}
+
+.announcements,
+.trending {
+    min-width: 275px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-top: 10%;
+    gap: 5%;
+}
+
+.main-content h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.main-content .card {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.announcements .card,
+.trending .card {
+    height: 80%;
+    width: 90%;
+}
+
 /* TEST STYLES */
 
 .main-content>div {
     border: 1px solid red;
 }
 
-.projects {
-    grid-row: span 2;
-}
 
 /* .second-row>*,
 .hello>* {
