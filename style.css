@@ -197,10 +197,30 @@ input {
     width: 90%;
 }
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    padding-left: max(13.75px, 1%);
+    padding-top: max(27.5px, 4%);
+    gap: 2.5%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+
 /* TEST STYLES */
 
-.main-content>div {
+/* .cards {
     border: 1px solid red;
+} */
+
+.cards>* {
+    /* border: 1px solid blueviolet; */
+    height: 175px;
 }
 
 
