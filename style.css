@@ -219,19 +219,61 @@ input {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
     padding-bottom: 15px;
-    overflow: auto;
+    overflow: scroll;
+}
+
+.cards .card {
+    height: 175px;
+    background-color: #F0B329;
+}
+
+.content-container {
+    background-color: white;
+    width: 98%;
+    height: 100%;
+    margin-left: 2%;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.content-container .content {
+    padding-top: 6%;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+.content h3 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.content p {
+    font-size: 1.1rem;
+    color: #636363;
+    line-height: 1.4rem;
+}
+
+.content-container .icons {
+    display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+.content-container img {
+    height: 35%;
+    padding-right: 5%;
 }
 
 /* TEST STYLES */
 
-/* .cards {
+/* .content-container>* {
     border: 1px solid red;
 } */
 
-.cards>* {
-    /* border: 1px solid blueviolet; */
-    height: 175px;
-}
+
 
 
 /* .second-row>*,
