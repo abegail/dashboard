@@ -37,7 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 7%;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .sidebar-item {
